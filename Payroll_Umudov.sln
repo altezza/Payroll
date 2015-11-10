@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payroll_Umudov", "Payroll_Umudov\Payroll_Umudov.csproj", "{E11F1613-7E9E-43D8-B777-19D112AA825D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayrollTest_Umudov", "PayrollTest_Umudov\PayrollTest_Umudov.csproj", "{9D4EFD02-56DB-4771-99F2-6253237832DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E11F1613-7E9E-43D8-B777-19D112AA825D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E11F1613-7E9E-43D8-B777-19D112AA825D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E11F1613-7E9E-43D8-B777-19D112AA825D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E11F1613-7E9E-43D8-B777-19D112AA825D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D4EFD02-56DB-4771-99F2-6253237832DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D4EFD02-56DB-4771-99F2-6253237832DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D4EFD02-56DB-4771-99F2-6253237832DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D4EFD02-56DB-4771-99F2-6253237832DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
