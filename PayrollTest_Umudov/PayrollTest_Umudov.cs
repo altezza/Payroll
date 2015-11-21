@@ -88,5 +88,32 @@ namespace PayrollTest_Umudov
             PaymentMethod pm = e.Method;
             Assert.IsTrue(pm is HoldMethod);
         }
+
+        [TestMethod]
+        public void DeleteEmployee()
+        {
+            int empId = 4;
+            AddCommissionedEmployee t = new AddCommissionedEmployee(empId, "Bill", "Home", 2500, 3.2);
+            t.Execute();
+            Employee e = PayrollDatabase.GetEmployee(empId);
+            Assert.IsNotNull(e);
+            DeleteEmployeeTransaction dt = new DeleteEmployeeTransaction(empId);
+            dt.Execute();
+            e = PayrollDatabase.GetEmployee(empId);
+            Assert.IsNull(e);
+        }
+
+        [TestMethod]
+        public void TimeCardTransaction()
+        {
+            int empId = 5;
+            AddHourlyEmployee t = new AddHourlyEmployee(empId, "Bill", "Home", 15.25);
+            t.Execute();
+            TimeCardTransaction tct = new TimeCardTransaction(new DateTime(2015, 10, 31), 8.0, empId);
+            tct.Execute();
+            Employee e = PayrollDatabase.GetEmployee(empId);
+            Assert.IsNotNull(e);
+
+        }
     }
 }

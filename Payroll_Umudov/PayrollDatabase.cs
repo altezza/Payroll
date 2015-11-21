@@ -20,5 +20,10 @@ namespace Payroll_Umudov
             return employees[id] as Employee;
         }
 
+
+        public static void DeleteEmployee(int id)
+        {
+            employees.Remove(id);
+        }
     }
 }
